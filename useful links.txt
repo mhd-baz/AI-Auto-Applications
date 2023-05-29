@@ -1,0 +1,1 @@
+To avoid Bot Detection while using Selenium: https://www.zenrows.com/blog/selenium-cloudflare-bypass#selenium-cloudflare-bypass-using-zenrows
