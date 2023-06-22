@@ -1,1 +1,1 @@
-# AI-Auto-Applications
+# AI-Auto-Application
