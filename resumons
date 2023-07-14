@@ -1,0 +1,55 @@
+LE BUT ULTIME: ON LANCE LA NUIT, ON VA DORMIR, on se reveille et on a apply pour tout les jobs de la veille qui nous intéresse!
+
+
+Etape 1:
+DOUBLONS: Donc capturer ID de chaque job offer (par plateforme) et supprimer les doublons pour glassdoor et Indeed
+SELENIUM -> BEAUTIFUL SOUP: Changer fonction pour avoir description de chaque job offer ET créer par la meme occasionc elle pour Indeed
+Etape 2:
+LABELISER LES DONNEES: Créer un fichier CSV avec données labelisées
+TRAIN: Train le modele flan-t5-large sur les données labelisées
+
+
+
+
+
+
+Fait tout les jours la nuit pendant qu'on dort
+
+1- Avoir le liens des jobs
+
+------------> TOUT LES JOBS POSSIBLE PUBLIE LA VEILLE
+
+PROBLEME: environ 800 jobs par jour pour 3 mots clés : Enorme surtout qu'il y a bcp de doublons!!!! DOUBLONS
+AVANTAGE: ça dure maaaaax 2min
+
+
+2- Avoir la description
+
+POURQUOI: pour savoir si le job nous intéresse ou pas
+
+Bonne nouvelle: on a une fonction qui le Fait et qui marche
+PROBLEME MAJEUR: ça prend un éternité (environ 2h20 voir plus pour 800 jobs)
+
+Idées pour améliorer: premièrement supprimer les doublons -> il faudrait INCORPORER ID pour chaque job offer
+deuxiuèmenet, utiliser beautiful soup, pourquoi utiliser selenium? il n'y a aucun intéret à afficher ce qu'on fait et je pense que ça raltentit le processus
+troisième idée, eventuellement parallleliser le process avec un service web ou autre
+
+3- Trier ce qui nous ai vraiment utilise
+
+Pour ça on a plusieurs possibilités
+
+mais tout d'abord on veut que les offres soit vraiment intéressante et qu'elles CORRESPONDENT A NOS CRITERES (mots clés, expérience, lieu, etc)
+
+3 idées:
+1- Utiliser chatgpt via selenium : AVANTAGE: Gratuit et super efficace / INCONVENIENT: pour le moment aucune fonction qui marche correcTEMENT ET BCP TEMPS (surement)
+2- Utiliser l'API de chatgpt: AVANTAGE: super efficace, surment plus rapide / INCONVENIENT: payant (environ 100 euros par mois pour jsute ttirer les offres)
+3- Developper notre propre modèle car c'est une tache simple en soit! AVANTAGE: gratuit, rapide, efficace / INCONVENIENT: il faut labelliser les données
+                                                                                                               et va peut etre prendre un peu de temps pour train
+
+-----------------------------------------------------------------------------------------------------
+
+4- Faire lettres de motivations et CV perso
+
+5- Automatiser le processus de candidature à 100%
+
+6- Créer une app windows ou une web app
